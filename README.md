@@ -25,33 +25,16 @@ Based on Mauricio Heck's **"How to Understand Anything"** methodology (Polymath 
 
 ---
 
-## 🔥 Before & After: The Same Topic, Two Approaches
+## 🔥 Does It Actually Work?
 
-> Real conversation. Same person. Same topic (**Git**). Completely different depth.
+Yes. Here's the same person learning **Git** — first without the framework, then with it:
 
-### ❌ Without the Framework
+| | Without Framework | With Framework |
+|---|---|---|
+| **Learner said** | *"I didn't understand."* *"Still too abstract."* | *"不错不错！"* ("Really good!") |
+| **Why** | Commands taught before the mental model. No unifying structure. | First Principles first. Four areas mapped. Inverse thinking applied. Feynman closed. |
 
-```
-Teacher: "Let's build a Git Dojo. Level 1: git add, git commit..."
-Learner: "I didn't understand." "Still too abstract." "Can you make it interactive?"
-```
-
-The explanation jumped between commands and metaphors without a unifying mental model. The learner sensed something was missing but couldn't name it.
-
-### ✅ With the Framework
-
-Using the 4-stage pipeline, Git was taught from the ground up:
-
-| Stage | What Changed |
-|-------|-------------|
-| **Deconstruct & Anchor** | Started with First Principles: *"Git is a content-addressable filesystem, not just a VCS."* Established the four-area mental model before teaching any command. |
-| **Connect & Patternize** | Mapped Git to familiar concepts (photo album, game save slots). Identified system archetypes (fork-merge, pointer indirection, snapshot vs. diff). |
-| **Question & Reframe** | Used Inversion: *"How to definitely misuse Git?"* Applied Five Whys to trace confusion back to root cause: *"Didn't build the mental model first."* |
-| **Integrate & Verify** | Drew cross-domain parallels (immutability, content addressing, eventual consistency). Closed with Feynman: *"Git is a super-smart save button."* |
-
-**Learner's response:** *"不错不错！"* (Translation: "This is really good!")
-
-> **The difference isn't knowledge — it's structure.** One approach dumps information. The other builds understanding.
+> **Same person. Same topic. Same AI. The only difference: a 4-stage pipeline that builds understanding instead of dumping information.**
 
 ---
 
@@ -100,6 +83,74 @@ systematic-understanding-framework/
 - **Evaluate a controversial topic** — Socratic questioning + falsification thinking + reference class reasoning
 - **Teach or write about something** — Feynman output reveals your own understanding gaps
 - **Make high-stakes decisions** — cross-domain integration + assumption testing + inversion
+
+---
+
+## 🤖 Agent Integration
+
+Turn any AI coding agent into a systematic thinker. Pick your platform:
+
+### Trae / Codex
+
+Drop the skill file into your skills directory:
+
+```bash
+cp systematic-understanding.skill .trae/skills/
+```
+
+Then restart or reload the window. The agent will automatically use the framework when you ask it to explain, analyze, or help you understand something.
+
+### Claude Code
+
+Add to your CLAUDE.md or skills directory:
+
+```bash
+cp -r systematic-understanding/ .claude/skills/
+```
+
+Or paste the prompt directly:
+
+```
+When helping me understand something, use the Systematic Understanding Framework:
+1. Deconstruct & Anchor (First Principles, Decomposition)
+2. Connect & Patternize (Analogy, System Archetypes)
+3. Question & Reframe (Inversion, Five Whys, Socratic)
+4. Integrate & Verify (Feynman, Cross-domain)
+```
+
+### Cursor
+
+Add to `.cursor/rules/`:
+
+```bash
+cp SKILL.md .cursor/rules/systematic-understanding.mdc
+```
+
+### GitHub Copilot
+
+Add to `.github/copilot-instructions.md`:
+
+```markdown
+Use the Systematic Understanding Framework when helping me learn:
+- Start from first principles before giving solutions
+- Build mental models, not just command lists
+- Use analogies, inversion, and the Feynman technique
+```
+
+### Windsurf
+
+Add to `.windsurfrules`:
+
+```
+When explaining concepts, use the 4-stage Systematic Understanding Framework:
+Deconstruct → Connect → Reframe → Verify. Prioritize mental models over step-by-step instructions.
+```
+
+### Any Agent (Manual)
+
+Just tell your agent:
+
+> *"Use the Systematic Understanding Framework from github.com/zaowanqaq/systematic-understanding-framework when helping me learn things."*
 
 ---
 
